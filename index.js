@@ -27,7 +27,6 @@ app.get("/", (req, res) => {
       "/api/download-tiktok",
       "/api/download-spotify",
       "/api/download-instagram",
-      
     ],
   });
 });
@@ -163,7 +162,7 @@ app.get("/api/info-tiktok", async (req, res) => {
 });
 
 app.get("/api/download-tiktok", async (req, res) => {
-  const url = req.query.u; // Check if this is undefined
+  const url = req.query.url; // Check if this is undefined
 
   if (!url) {
     return res
