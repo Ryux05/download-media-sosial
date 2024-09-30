@@ -27,9 +27,11 @@ app.get("/", (req, res) => {
       "/api/download-tiktok",
       "/api/download-spotify",
       "/api/download-instagram",
+      "/api/download-twitter",
     ],
   });
 });
+
 app.get("/api/download-spotify", async (req, res) => {
   const url = req.query.url;
 
